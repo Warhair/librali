@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id("book_id");
             $table->string("autor",32);
             $table->string("title",150);
-            $table->int("pieces")->default(50);
+            $table->integer("pieces")->default(50);
             $table->timestamps();
         });
     }
